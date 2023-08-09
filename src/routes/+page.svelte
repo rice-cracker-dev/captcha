@@ -1,17 +1,17 @@
+<script>
+  import { goto } from "$app/navigation";
+</script>
+
 <div class="container">
   <div>
     <p>Please verify that you're a human</p>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+    <button on:click={() => goto("https://www.youtube.com/watch?v=dQw4w9WgXcQ")}>
       <img src="/captcha.png" alt="" style="width: 20rem;" />
-    </a>
+    </button>
   </div>
 </div>
 
 <style>
-  * {
-    box-sizing: border-box;
-  }
-
   .container {
     width: 100svw;
     height: 100svh;
